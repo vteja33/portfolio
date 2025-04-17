@@ -1,0 +1,22 @@
+
+import './App.css'
+import AboutSection from './components/ui/AboutSection'
+import Footer from './components/ui/Footer'
+import HeroSection from './components/ui/HeroSection'
+import Navbar from './components/ui/Navbar'
+import ProjectsSection from './components/ui/ProjectsSection'
+
+function App() {
+
+  return (
+    <>
+      <Navbar />
+      <HeroSection />
+      <ProjectsSection />
+      <AboutSection />
+      <Footer />
+    </>
+  )
+}
+
+export default App
