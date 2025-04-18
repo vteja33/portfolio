@@ -5,6 +5,7 @@ import Footer from './components/ui/Footer'
 import HeroSection from './components/ui/HeroSection'
 import Navbar from './components/ui/Navbar'
 import ProjectsSection from './components/ui/ProjectsSection'
+import ContactSection from './components/ui/ContactSection'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <HeroSection />
       <ProjectsSection />
       <AboutSection />
+      <ContactSection />
       <Footer />
     </>
   )

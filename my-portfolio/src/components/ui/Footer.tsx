@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer id="contact" className="bg-gray-800 text-gray-100 py-6">
+      <footer className="bg-gray-800 text-gray-100 py-6">
         <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-2 md:mb-0">&copy; {new Date().getFullYear()} Vamshi Vallala. All rights reserved.</p>
           <div className="space-x-4 text-sm">
