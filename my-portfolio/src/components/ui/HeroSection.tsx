@@ -24,7 +24,7 @@ export default function HeroSection() {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 bg-white border border-gray-300 px-4 py-2 rounded-full hover:shadow transition"
                         >
-                            <img src="/github-mark.svg" alt="GitHub" className="w-5 h-5" />
+                            <img src={`${import.meta.env.BASE_URL}github-mark.svg`} alt="GitHub" className="w-5 h-5" />
                             <span className="text-sm font-medium text-gray-800">GitHub</span>
                         </a>
                         <a href="https://www.linkedin.com/in/vamshi-teja-vallala"
@@ -32,7 +32,7 @@ export default function HeroSection() {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 bg-white border border-gray-300 px-4 py-2 rounded-full hover:shadow transition"
                         >
-                            <img src="/linkedin.svg" alt="LinkedIn" className="w-5 h-5" />
+                            <img src={`${import.meta.env.BASE_URL}linkedin.svg`} alt="LinkedIn" className="w-5 h-5" />
                             <span className="text-sm font-medium text-gray-800">LinkedIn</span>
                         </a>
                     </div>
