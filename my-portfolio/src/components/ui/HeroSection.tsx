@@ -6,7 +6,6 @@ import {TypeAnimation} from "react-type-animation"
 
 export default function HeroSection() {
     const [showLine2, setShowLine2] = useState(false);
-    const [showLine3, setShowLine3] = useState(false);
 
 
     return (
@@ -34,28 +33,15 @@ export default function HeroSection() {
                         I develop sleek apps with React, Python and a touch of magic.   */}
                         {showLine2 && (
                             <TypeAnimation
-                                sequence={[
-                                "Full Stack Developer. Cloud explorer. Machine Learning enthusiast.",
-                                () => setShowLine3(true),
-                                ]}
-                                wrapper="p"
-                                speed={70}
-                                repeat={0}
-                                className="text-gray-700 text-lg mb-6"
-                            />
-                        )}
-                        
-                        {showLine3 && (
-                            <TypeAnimation
-                                sequence={[
-                                "I develop sleek apps with React, Python and a touch of magic.",
-                                1500,
-                                ]}
-                                wrapper="p"
-                                speed={70}
-                                repeat={0}
-                                className="text-gray-700 text-lg mb-6"
-                            />
+                            sequence={[
+                            "Full Stack Developer. Cloud explorer. Machine Learning enthusiast. \n I develop sleek apps with React, Python and a touch of magic. I love coding neural networks and manipulating data for the greater good.",
+                            1500,
+                            ]}
+                            wrapper="p"
+                            speed={70}
+                            repeat={0}
+                            className="text-gray-700 text-lg mb-6 whitespace-pre-line"
+                        />
                         )}
                         
                     {/* </p> */}
