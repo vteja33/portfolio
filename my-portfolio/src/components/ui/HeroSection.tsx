@@ -60,7 +60,7 @@ export default function HeroSection() {
                         
                     {/* </p> */}
                     <div className="flex justify-center items-center gap-4 flex-wrap mb-6">
-                        <a href="#contact"><Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 py-2">View Projects</Button></a>
+                        <a href="#projects"><Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 py-2">View Projects</Button></a>
                         <a href="#contact"><Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 py-2">Contact Me</Button></a>
                     </div>
                     <div className="flex justify-center space-x-4">

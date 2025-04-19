@@ -23,6 +23,8 @@ export default function ProjectsSection() {
             return "bg-blue-200 text-blue-900";
           case "python":
             return "bg-green-200 text-green-900";
+          case "jupyter notebook":
+            return "bg-green-200 text-green-900";
           case "html":
             return "bg-red-200 text-red-900";
           case "css":
