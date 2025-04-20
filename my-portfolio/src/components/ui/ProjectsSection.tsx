@@ -44,7 +44,14 @@ export default function ProjectsSection() {
         ["portfolio", "Portfolio Website"],
         ["Data-Analysis-Python", "Housing Data Analysis"],
         ["deep-learning-project", "Image Classification CNN"],
-        ["FoodLink", "Food Link"]
+        ["FoodLink", "Food Link"], 
+        ["ibm-ds-capstone", "SpaceX Launch Prediction Project"],
+      ]);
+
+      const repoImageMap = new Map<string, string>([
+        ["Data-Analysis-Python", "housing_analysis.png"],
+        ["ibm-ds-capstone", "data_science_project.png"],
+        ["deep-learning-project", "image_classification.png"],
       ]);
 
     useEffect(() => {
@@ -59,10 +66,10 @@ export default function ProjectsSection() {
 
                 const allowedRepos = [
                   "Mental-Health-Bot",
-                  "portfolio",
                   "Data-Analysis-Python",
                   "deep-learning-project",
-                  "FoodLink"
+                  "FoodLink",
+                  "ibm-ds-capstone",
                 ];
 
                 
@@ -85,7 +92,7 @@ export default function ProjectsSection() {
 
     return (
       <section id="projects" className="w-full py-20 bg-white">
-        <div className="max-w-lg mx-auto px-4">
+        <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
           { loading ? (
             <p className="text-center text-gray-600">Loading Projects</p>
@@ -95,6 +102,13 @@ export default function ProjectsSection() {
                     <Card key={repo.id} className="hover:shadow-lg transition-shadow">
                         <CardHeader>
                             <CardTitle>{repoMap.get(repo.name) || repo.name}</CardTitle>
+                            {repoImageMap.get(repo.name) && 
+                              <img 
+                                src={`${import.meta.env.BASE_URL}${repoImageMap.get(repo.name)}`}
+                                alt={`${repo.name} preview`}
+                                className="mx-auto w-full max-w-sm max-h-64 object-cover rounded-xl mt-4"
+                                >
+                              </img>}
                             <CardDescription>{repo.description || "No Description Available."}</CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -110,6 +124,16 @@ export default function ProjectsSection() {
                 ))}
             </div>
           )}
+        </div>
+        <div className="flex justify-center mt-10">
+          <a href="https://github.com/vteja33"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white border border-gray-300 px-5 py-2 rounded-full shadow-sm hover:shadow-md transition text-gray-800 text-sm font-medium"
+            >
+              <img src={`${import.meta.env.BASE_URL}github-mark.svg`} alt="GitHub" className="w-5 h-5" />
+              <span className="text-sm font-medium text-gray-800">View All Projects</span>
+          </a>
         </div>
       </section>
     )
