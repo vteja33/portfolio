@@ -85,7 +85,7 @@
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.15 0 0);
 
-  --primary: oklch(0.69 0.19 265);  /* Blue */
+  --primary: oklch(0.69 0.19 265); /* Blue */
   --primary-foreground: oklch(0.99 0 0); /* White-ish text */
 
   --accent: oklch(0.76 0.21 20); /* Coral/Red */
@@ -97,7 +97,6 @@
   --border: oklch(0.9 0 0);
   --ring: oklch(0.6 0.1 270);
 }
-
 
 .dark {
   --background: oklch(0.98 0 0);

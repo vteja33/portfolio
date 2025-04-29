@@ -46,6 +46,7 @@ export default function ProjectsSection() {
         ["deep-learning-project", "Image Classification CNN"],
         ["FoodLink", "Food Link"], 
         ["ibm-ds-capstone", "SpaceX Launch Prediction Project"],
+        ["stock-sight", "Stock Sight"],
       ]);
 
       const repoImageMap = new Map<string, string>([
@@ -70,6 +71,7 @@ export default function ProjectsSection() {
                   "deep-learning-project",
                   "FoodLink",
                   "ibm-ds-capstone",
+                  "stock-sight",
                 ];
 
                 

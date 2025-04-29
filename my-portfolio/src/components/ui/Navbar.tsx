@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-scroll";
 
-
 export default function Navbar() {
   return (
     <header className="w-full px-4 py-3 shadow-md sticky top-0 bg-white z-50">
@@ -23,5 +22,5 @@ export default function Navbar() {
         </div>
       </nav>
     </header>
-  )
+  );
 }
